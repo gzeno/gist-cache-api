@@ -2,6 +2,7 @@
 
 This is a simple back-end API that retrieves gists using the Github v3 API.  It uses the Java Spring Boot as the framework and the cache uses Mongodb.  The Gist domain only keeps some of the information from the actual gist but can be updated to add more fields when needed.  
 A NoSql database was chosen because it is faster when we don't have complex relationships between different domains.  Gists is the only domain here and it has a variable number of files, making normal relational SQL harder to use.
+
 Note: This does NOT handle the V3 API truncation case in the case of having over 300 files nor does it handle the truncation in the case of the content of a file being too large.
 
 How to run + deploy using the included docker-compose file:
