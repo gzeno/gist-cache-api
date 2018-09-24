@@ -8,7 +8,7 @@ How to run + deploy using the included docker-compose file:
 
 Required installs: Maven, docker, docker-compose
 
-1. Compile using "maven package" at dir root.
+1. Compile using "maven package" at dir root.  There should now be a directory named "target" with a .jar file inside.  If there isn't the docker-compose file will fail.
 
 2. Make sure you have a docker hub account ready and build the docker images using "docker-compose -f gist-cache-docker-compose.yml build"
 
